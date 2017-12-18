@@ -98,7 +98,7 @@ wait = {
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
-    "UpdateName":False,
+    "UpdateName":True,
     "cName":"",
     "cName2":"ASIST",
     "cName3":"ASIST",
@@ -2316,23 +2316,6 @@ def bot(op):
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))
       #-------------Fungsi Speedbot Finish---------------------#
-        #-------------Fungsi UpdateName on/off Start-------------------#            
-            elif msg.text in ["UpdateName on"]:
-                if wait["UpdateName"] == True:
-                    cl.sendText(msg.to,"on")
-                else:
-                    wait["UpdateName"] = True
-                    profile = cl.getProfile()
-                    profile.displayName = wait["cName"]
-                    cl.updateProfile(profile)
-                    cl.sendText(msg.to,"On")
-            elif msg.text in ["UpdateName off"]:
-                if wait["UpdateName"] == False:
-                    cl.sendText(msg.to,"off")
-                else:
-                    wait["UpdateName"] = False
-                    cl.sendText(msg.to,"Off")
-         #-------------Fungsi UpdateName on/off Finish-------------------# 
 #------------------------------------------------------#
             elif msg.text in ["UpdateName"]:
               if msg.from_ in admin:
