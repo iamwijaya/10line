@@ -1,16 +1,19 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- 
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
-from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,re
+import LINETCR 
+from LINETCR.lib.curve.ttypes import * 
+from datetime import datetime 
+import time,random,sys,json,codecs,threading,glob,re 
 
-#kk = LINETCR.LINE()
-#kk.login(qr=True)
-#kk.loginResult()
+#kk = LINETCR.LINE() 
+#kk.login(qr=True) 
+#kk.loginResult() 
 
-cl = LINETCR.LINE() #A)
-cl.login(token="3NF3TVdQNLEtxfBYAGnQzD1Y9HAY3eU8OA2d5TgY0HlRhLRsOUDYtSFQ7TQFjKU9e=)
+cl = LINETCR.LINE() #A) 
+cl.login(token="EnvfoKaQFHbyu7jWegu2.WCCRkMNgQXINSOQNF/5yiG.mSRWJkU5Vt6YRscA5KaKwLl0Hyxwj91L+qe1qgOMTMI=")
+
+ki = LINETCR.LINE() #B) 
+ki.login(token="EnPE1H1fGFThX1ry9pac.iPVblK8oEfqifUIij+vu7a.xvZfAB7oOuB/9k9KgkXF0K4PVys1HzvvoQpwx8n1R6w=")
 	 
 ki = kk = kc = ks = ka = kb = ko = ke = ku = cl
 
@@ -33,9 +36,7 @@ helpMessage ="""❧[Auto leave:on/off]
 ❧[Bc [TEKS]]
 ❧[Group bc [TEKS]]
 ❧[Contact bc [TEKS]]
-
 ✍️T̸̡̛̎ͬͩ̀̂̿́́̾͌̃̋̀́̚͟͜Σ̸̸̲͔̲͖̞̈͑ͦͬ̈ͫ̈́̈́̐̾ͣ́̒Δ̣̰͆͢͡͞M̸̨̧̉́͘͢ ̢̠̮̰̼̈͒̋̊͆̌̐̌ͫ̂ͧ͋ͭͪ̈́͜J̠͂̽̂̏̄͆̌̐̎̾Ω̷̨̨̖̘̹ͬ́́͢͞Ҝ̛̭ͯ͌͒ͭͨ̂̏̔̚͝Σ̯͇̳͕͔ͩͣR̶̬͕̬̟̎ͩ̅͛̽ͤ̇̊ͧ͊͛̚̕͞҉̛̛͘͠͏̵ ̟̮̰̒̒ͣ̀̄̂̔͒̔͋̚͜͝͡β̴̨̛ͫͫ̄͊́̚Ω̫̈ͤ́̋ͩ͂̄̀ͥ͛ͥ̒̈́̇̚Ţ̵̸̸̡̛̲̩̐͛ͦ͌̃̓ͩ̃̏̓ͨ̄̓͆̀̕̕͞͞͠S̳̪̘̒̐̑ͧͦ͏̵̛̀̕͡͡ ✈
-
 """
 
 Setgroup =""" GROUP PROTECTION
