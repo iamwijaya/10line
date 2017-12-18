@@ -101,14 +101,14 @@ wait = {
     "dblack":False,
     "UpdateName":False,
     "cName":"",
-    "cName2":"",
-    "cName3":"",
-    "cName4":"",
-    "cName5":"",
-    "cName6":"",
-    "cName7":"",
-    "cName8":"",
-    "cName9":"",
+    "cName2":"ASIST",
+    "cName3":"ASIST",
+    "cName4":"ASIST",
+    "cName5":"ASIST",
+    "cName6":"ASIST",
+    "cName7":"ASIST",
+    "cName8":"ASIST",
+    "cName9":"ASIST",
     "cName10":"􀀷􀰂􀰂꧁Kicker꧂􏿿􀀷",
     "blacklist":{},
     "wblacklist":False,
@@ -1855,7 +1855,7 @@ def bot(op):
                         
                       except:
                         Creatorbot = "Error"
-                      cl.sendText(msg.to, "Fake Hack Bot")
+                      cl.sendText(msg.to, "🅂🅄🄿🄿🄾🅁🅃 🄱🅈 🄹🄾🄺🄴🅁 🄱🄾🅃 🄰🄽🄳 🄳🄹")
                       cl.sendMessage(msg)
                       
             elif "Admin add @" in msg.text:
