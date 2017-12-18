@@ -2319,7 +2319,7 @@ def bot(op):
         #-------------Fungsi UpdateName on/off Start-------------------#            
             elif msg.text in ["UpdateName on"]:
                 if wait["UpdateName"] == True:
-                    cl.sendText(msg.to,"Bot 4 jam on")
+                    cl.sendText(msg.to,"on")
                 else:
                     wait["UpdateName"] = True
                     profile = cl.getProfile()
@@ -2387,15 +2387,9 @@ def bot(op):
             elif msg.text in ["Ban"]:
                 wait["wblacklist"] = True
                 cl.sendText(msg.to,"send contact")
-                ki.sendText(msg.to,"send contact")
-                kk.sendText(msg.to,"send contact")
-                kc.sendText(msg.to,"send contact")
             elif msg.text in ["Unban"]:
                 wait["dblacklist"] = True
                 cl.sendText(msg.to,"send contact")
-                ki.sendText(msg.to,"send contact")
-                kk.sendText(msg.to,"send contact")
-                kc.sendText(msg.to,"send contact")
       #-------------Fungsi Banned Send Contact Finish------------------#
       #-------------Fungsi Bannlist Start------------------#          
             elif msg.text in ["Banlist"]:
@@ -2432,7 +2426,7 @@ def bot(op):
                         cl.sendText(msg.to,"There was no blacklist user")
                         return
                     for jj in matched_list:
-                        cl.kickoutFromGroup(msg.to,[jj])
+                        ks.kickoutFromGroup(msg.to,[jj])
                         ki.kickoutFromGroup(msg.to,[jj])
                         kk.kickoutFromGroup(msg.to,[jj])
                         kc.kickoutFromGroup(msg.to,[jj])
