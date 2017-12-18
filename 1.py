@@ -11,6 +11,7 @@ import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE() #A)
 cl.login(token="3NF3TVdQNLEtxfBYAGnQzD1Y9HAY3eU8OA2d5TgY0HlRhLRsOUDYtSFQ7TQFjKU9e=)
+	 
 ki = kk = kc = ks = ka = kb = ko = ke = ku = cl
 
 print "Welcome"
