@@ -2423,7 +2423,12 @@ def bot(op):
                     nadya.kedapkedip(msg.to,txt)
                     print "[Command] Kedapkedip"
 
-
+            elif "kedapkedip " in msg.text.lower():
+                txt = msg.text.replace("kedapkedip ", "")
+                t1 = "\xf4\x80\xb0\x82\xf4\x80\xb0\x82\xf4\x80\xb0\x82\xf4\x80\xb0\x82\xf4\x80\xa0\x81\xf4\x80\xa0\x81\xf4\x80\xa0\x81"
+                t2 = "\xf4\x80\x82\xb3\xf4\x8f\xbf\xbf"
+                cl.sendText(msg.to, t1 + txt + t2)
+		
             elif "cover @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("cover @","")
