@@ -14,7 +14,7 @@ from io import StringIO
 from threading import Thread
 
 
-cl = LineAlpha.LINE() 
+cl = LINETCR.LINE() 
 cl.login(token="EoOq0VyOhYUy1qzKvcu5.zCqi2/QXZq+wailNIE/ULq.WE1fnH6GRWNgFPCyJQnGWuUNMpNkijr/fkMrPu9k7uM=")
 cl.loginResult()
 
