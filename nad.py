@@ -9,7 +9,7 @@ from threading import Thread
 from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-cl = LINETCR.LINE()
+nadya = LINETCR.LINE()
 nadya.login(token="EoQ494L2yPKuWy6V6M10.Mn4yxliqDSbvwYAvIFTAea.C3LM8TyqIDPs67PHdmaPoKnCt1IXmz6IA+rsOTTJT7c=")
 print "Chucky-Login Success\n\n=====[Sukses Login]====="
 
