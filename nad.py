@@ -562,18 +562,6 @@ def bot(op):
             if op.param3 in mid:
 		if op.param2 in Creator:
 		    nadya.acceptGroupInvitation(op.param1)
-
-		    
-	    if mid in op.param3:	        
-                if wait["AutoJoinCancel"] == True:
-		    G = nadya.getGroup(op.param1)
-                    if len(G.members) <= wait["memberscancel"]:
-                        nadya.acceptGroupInvitation(op.param1)
-                        nadya.sendText(op.param1,"Maaf " + nadya.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
-                        nadya.leaveGroup(op.param1)                        
-		    else:
-                        nadya.acceptGroupInvitation(op.param1)
-			nadya.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Bot Dengan Bijak ^_^ ☆")
                         		    
  
 	    if mid in op.param3:
