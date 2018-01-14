@@ -551,16 +551,7 @@ def bot(op):
         else:
             pass
 
-	    if mid in op.param3:	        
-                if wait["AutoJoinCancel"] == True:
-		    G = cl.getGroup(op.param1)
-                    if len(G.members) <= wait["memberscancel"]:
-                        cl.acceptGroupInvitation(op.param1)
-                        cl.sendText(op.param1,"Maaf " + cl.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
-                        cl.leaveGroup(op.param1)                        
-		    else:
-                        cl.acceptGroupInvitation(op.param1)
-			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Bot Dengan Bijak ^_^ ☆")
+
 #---------------------------------------------#
         if op.type == 17:
           if wait["Sambutan"] == True:
