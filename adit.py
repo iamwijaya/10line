@@ -10,7 +10,7 @@ from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
 nadya = LINETCR.LINE()
-nadya.login(token="EoQ494L2yPKuWy6V6M10.Mn4yxliqDSbvwYAvIFTAea.C3LM8TyqIDPs67PHdmaPoKnCt1IXmz6IA+rsOTTJT7c=")
+nadya.login(token="EouTz41ZnuE63Cqe9Tc5.H0P1aSaOLRlTUZrfWMfDnq.ppe5LjXN3OyVvZM7t4sQXflzwQqA+jDWrpvBRK3RbmY=")
 print "Chucky-Login Success\n\n=====[Sukses Login]====="
 
 reload(sys)
@@ -128,7 +128,7 @@ groupMessage ="""
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
 """
-Me="u98de185cb21076c0555b269589fb5a10"
+Me=[mid]
 
 setMessage ="""
 ╔═════════════════════════
@@ -226,8 +226,8 @@ helpMessage ="""
 KAC=[nadya]
 mid = nadya.getProfile().mid
 Bots=[mid]
-Creator=["u98de185cb21076c0555b269589fb5a10"]
-admin=["u98de185cb21076c0555b269589fb5a10"]
+Creator=[mid]
+admin=[mid]
 
 contact = nadya.getProfile()
 backup1 = nadya.getProfile()
@@ -882,12 +882,6 @@ def bot(op):
  
             elif msg.text is None:
                 return
- 
-            elif msg.text in ["Creator","Owner"]:
-                msg.contentType = 13
-                msg.contentMetadata = {'u98de185cb21076c0555b269589fb5a10': Me}
-                nadya.sendMessage(msg)
-		nadya.sendText(msg.to,"")
 		
  
                 
