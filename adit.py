@@ -128,8 +128,6 @@ groupMessage ="""
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
 """
-Me=[mid]
-
 setMessage ="""
 ╔═════════════════════════
 ║              ☆☞ S E T ☜☆
