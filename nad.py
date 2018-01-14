@@ -2,7 +2,7 @@
 #Chuck_Bot
 
 import LINETCR
-from LINETCR.lib.curve.ttypes import
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
 from threading import Thread
