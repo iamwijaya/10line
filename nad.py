@@ -128,7 +128,7 @@ groupMessage ="""
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
 """
-arka="u98de185cb21076c0555b269589fb5a10"
+Me="u98de185cb21076c0555b269589fb5a10"
 
 setMessage ="""
 ╔═════════════════════════
@@ -234,9 +234,6 @@ backup1 = nadya.getProfile()
 backup1.displayName = contact.displayName
 backup1.statusMessage = contact.statusMessage                        
 backup1.pictureStatus = contact.pictureStatus
-
-responsename = nadya.getProfile().displayName
-
 
 wait = {
     "LeaveRoom":True,
@@ -900,7 +897,7 @@ def bot(op):
  
             elif msg.text in ["Creator","Owner"]:
                 msg.contentType = 13
-                msg.contentMetadata = {'u98de185cb21076c0555b269589fb5a10': arka}
+                msg.contentMetadata = {'u98de185cb21076c0555b269589fb5a10': Me}
                 nadya.sendMessage(msg)
 		nadya.sendText(msg.to,"")
 		
@@ -2175,8 +2172,9 @@ def bot(op):
 		nadya.sendText(msg.to,"Hadir!!")
 
 
-            elif msg.text.lower() in ["respon"]:
-                nadya.sendText(msg.to,responsename)
+            elif msg.text in ["Respon","respon"]:
+              if msg.from_ in admin:
+                ki.sendText(msg.to,"I'am here")
 
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
