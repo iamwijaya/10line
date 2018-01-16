@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import LineAlpha
-from LineAlpha.Gen.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia,glob
 from bs4 import BeautifulSoup
@@ -15,7 +15,7 @@ from io import StringIO
 from threading import Thread
 
 
-cl = LineAlpha.LINE()
+cl = LINETCR.LINE()
 cl.login(token="EoOq0VyOhYUy1qzKvcu5.zCqi2/QXZq+wailNIE/ULq.WE1fnH6GRWNgFPCyJQnGWuUNMpNkijr/fkMrPu9k7uM=")
 cl.loginResult()
 
