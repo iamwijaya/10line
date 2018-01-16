@@ -16,7 +16,7 @@ from threading import Thread
 
 
 cl = LINETCR.LINE()
-cl.login(token="EoOq0VyOhYUy1qzKvcu5.zCqi2/QXZq+wailNIE/ULq.WE1fnH6GRWNgFPCyJQnGWuUNMpNkijr/fkMrPu9k7uM=")
+cl.login(token="EonpZFpS0OxOZmDgOqY2.WCCRkMNgQXINSOQNF/5yiG.EcqziEJmwOdvTJF9ISdQRF9ySGnMYuoaFXd65rBrFWY=")
 cl.loginResult()
 
 print "Welcomeback"
